@@ -17,7 +17,7 @@ jobs:
         gradle wrapper --gradle-version 8.1.0
         ./gradlew assembleDebug
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: My-DSH-App
         path: app/build/outputs/apk/debug/*.apk
